@@ -1,0 +1,35 @@
+.home {
+  color: var(--dark-text);
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.intro-question {
+  font-weight: 700;
+}
+
+grid-container {
+  display: grid;
+  grid-template-columns: 9rem 9rem;
+  grid-auto-rows: 9rem;
+  grid-gap: 10px;
+}
+
+grid-item{
+  color: white;
+}
+
+.question-block {
+  border-radius: 5px;
+  width: 9rem;
+  height: 9rem;
+  padding: 5%;
+}
+
+.question-name {
+  text-align: center;
+  color: var(--light-text);
+  font-size: 1.1rem;
+  margin: 0;
+}
