@@ -15,17 +15,19 @@ function Home() {
       <p className="intro-text">{introText}</p>
       <p className="intro-question">{introQuestion}</p>
       <hr></hr>
-      <grid-container>
-        {questions.map((question, i) => {
-          return (
-            <QuestionBlock
-              className="m-1 q-block"
-              key={i}
-              question={question}
-            />
-          );
-        })}
-      </grid-container>
+      <div className="row">        
+        <div className="col-10 all-questions centered">
+          {questions.map((question, i) => {
+            return (
+              <QuestionBlock
+                className="m-1 q-block"
+                key={i}
+                question={question}
+              />
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }
