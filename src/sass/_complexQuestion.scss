@@ -1,0 +1,27 @@
+.title-block {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 8%;
+  color: var(--light-text);
+  font-size: 1.2rem;
+}
+
+.ad-banner-block {
+  width: 92%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1em auto;
+  padding-top: 22%;
+  /* padding-top: (img-height / img-width * container-width) */
+}
+
+//This is for Ipad & Desktop
+@media only screen and (min-width: 600px) {
+  .title-block {
+    padding: 5%;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}

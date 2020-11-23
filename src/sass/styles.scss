@@ -1,8 +1,8 @@
-@import "./home.scss";
+@import "./home";
+@import "./complexQuestion";
 
 * {
   box-sizing: border-box;
-  //border: 0 !important;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -19,15 +19,18 @@
   --block-health: #cb2432;
   --block-biology: #00aa8d;
   --block-diet: #f65462;
-  --block-technology: #0056ad;
+  --block-technology: #437db8;
   --block-other: #004e64;
   --dark-text: #004e64;
   --light-text: #ffffff;
 }
 
+body {
+  margin-bottom: 40px !important;
+}
+
 .App {
   background-color: var(--main-bg);
-  padding-bottom: 60px; //sticky footer there
 }
 
 Button {
@@ -38,24 +41,39 @@ Button {
   box-shadow: 2px 2px 2px rgba(0, 0.3, 0.3, 0.2);
 }
 
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  margin: 0 !important;
+  max-width: none !important;
+}
+
+row {
+  width: 100vw !important;
+  margin: 0 auto;
+}
+
 //CONTAINS STYLING FOR HEADER, NAVBAR & FOOTER
 
 .header-container {
   background-color: var(--header);
   display: flex;
   padding: 10px;
+  margin: 0;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2em;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   font-size: 28px;
 }
 
 .logo {
   font-family: "Script MT", Arial, Helvetica, sans-serif;
-  font-size: 25px !important; 
+  font-size: 25px !important;
   color: var(--light-text);
 }
 
@@ -64,13 +82,12 @@ Button {
   color: var(--light-text);
 }
 
-.user-icon{
+.user-icon {
   position: absolute;
   right: 25px;
   top: 28px;
   font-size: 28px;
   color: white;
-
 }
 
 footer {
@@ -78,11 +95,12 @@ footer {
   display: flex;
   left: 0;
   bottom: 0;
+  right: 0;
+  height: 40px;
   width: 100%;
   background-color: var(--header);
-  height: 40px;
   color: var(--light-text);
-  font-family: 'Segoe UI', Helvetica, sans-serif;
+  font-family: "Segoe UI", Helvetica, sans-serif;
   font-style: italic;
   text-align: center;
   font-size: 0.8em;

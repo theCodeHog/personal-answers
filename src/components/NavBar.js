@@ -8,7 +8,6 @@ import {
   NavLink,
 } from "reactstrap";
 
-
 export default function NavBar(props) {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -17,8 +16,8 @@ export default function NavBar(props) {
   return (
     <div>
       <Navbar color="faded" dark>
-        <span class="navbar-toggler-icon mr-5" onClick={toggleNavbar}>
-          <i class="fas fa-bars"></i>
+        <span className="navbar-toggler-icon mr-5" onClick={toggleNavbar}>
+          <i className="fas fa-bars"></i>
         </span>
         <NavbarBrand href="/" className="mr-auto logo">
           TailoredToMe
@@ -34,8 +33,7 @@ export default function NavBar(props) {
             </NavItem>
           </Nav>
         </Collapse>
-       
       </Navbar>
     </div>
   );
-};
+}
